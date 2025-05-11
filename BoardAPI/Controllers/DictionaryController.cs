@@ -18,7 +18,7 @@ namespace BoardAPI.Controllers
         public async Task<IActionResult> GetAllCategoriesAsync() =>
             Ok(await _repository.GetAllCategoriesAsync());
 
-        [HttpGet("categories{id}")]
+        [HttpGet("categories/{id}")]
         public async Task<IActionResult> GetCategoryByIdAsync(int id)
         {
             var ad = await _repository.GetCategoryByIdAsync(id);
@@ -29,7 +29,7 @@ namespace BoardAPI.Controllers
         public async Task<IActionResult> GetAllSubCategoriesAsync() =>
             Ok(await _repository.GetAllSubCategoriesAsync());
 
-        [HttpGet("subcategories{id}")]
+        [HttpGet("subcategories/{id}")]
         public async Task<IActionResult> GetSubCategoryByIdAsync(int id)
         {
             var ad = await _repository.GetSubCategoryByIdAsync(id);
