@@ -1,4 +1,4 @@
-@BoardAPI_HostAddress = http://localhost:5135
+@BoardAPI_HostAddress = http://localhost:5272
 
 GET {{BoardAPI_HostAddress}}/weatherforecast/
 Accept: application/json
