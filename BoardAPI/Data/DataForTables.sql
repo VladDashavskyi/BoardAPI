@@ -30,8 +30,9 @@ INSERT INTO SubCategories (CategoryId, Name, DisplayName) VALUES
 
 INSERT INTO Announcements (Title, Description, Status, CategoryId, SubCategoryId)
 VALUES 
-(N'Продам новий холодильник Samsung', N'Повністю новий, з гарантією 2 роки', 'Active', 1, 1), 
-(N'Продам ноутбук Lenovo', N'8GB RAM, 512GB SSD, як новий', 'Active', 2, 8), 
-(N'iPhone 13 Pro Max', N'Стан ідеальний, заряд тримає чудово', 'Sold', 3, 13), 
-(N'Дитячий велосипед', N'Майже новий, підходить для дітей 5-7 років', 'Available', 4, 17), 
-(N'Сканер Canon Lide', N'Компактний та зручний для дому', 'Active', 2, 11); 
+(N'Продам новий холодильник Samsung', N'Повністю новий, з гарантією 2 роки', 'Created', 1, 1), 
+(N'Продам ноутбук Lenovo', N'8GB RAM, 512GB SSD, як новий', 'Created', 2, 8), 
+(N'iPhone 13 Pro Max', N'Стан ідеальний, заряд тримає чудово', 'Created', 3, 13), 
+(N'Дитячий велосипед', N'Майже новий, підходить для дітей 5-7 років', 'Created', 4, 17), 
+(N'Сканер Canon Lide', N'Компактний та зручний для дому', 'Created', 2, 11); 
+
