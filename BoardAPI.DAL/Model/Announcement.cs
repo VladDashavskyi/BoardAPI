@@ -1,4 +1,6 @@
-﻿namespace BoardAPI.DAL.Model
+﻿using BoardAPI.Common.Enum;
+
+namespace BoardAPI.DAL.Model
 {
     public class Announcement
     {
@@ -6,7 +8,7 @@
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime CreatedDate { get; set; }
-        public string Status { get; set; }
+        public Status Status { get; set; }
         public int CategoryId { get; set; }
         public int SubCategoryId { get; set; }
     }
