@@ -88,12 +88,18 @@ namespace BoardAPI.DAL.Repositories
             }
         }       
         
-        public async Task<IEnumerable<Category>> GetCategoryByIdAsync(int id)
+        public async Task<Category> GetCategoryByIdAsync(int id)
         {
             using (DbConnection dbConnection = new SqlConnection(_connectionString))
             {
                 await dbConnection.OpenAsync();
-                return await dbConnection.QueryAsync<Category>("EXEC GetCategoryById @Id", new {Id = id});
+                var result = await dbConnection.QueryAsync<Category>("EXEC GetCategoryById @Id", new {Id = id});
+
+                if(result != null && result.Any())
+                {
+                    return result.First();
+                }
+                return null;
             }
         }
 
